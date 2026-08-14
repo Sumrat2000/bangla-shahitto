@@ -1,0 +1,5 @@
+{
+  "appId": "com.samrat.banglashahitto",
+  "appName": "বাংলা সাহিত্য",
+  "webDir": "mkdir wwwcp ~/storage/downloads/bangla-shahitto/* www/ -rnpx cap add androidnpx cap sync android"
+}

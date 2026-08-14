@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>টাইমলাইন — বাংলা সাহিত্য</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&family=Noto+Serif+Bengali:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="timeline.css">
+</head>
+<body class="timeline-body">
+
+<header class="tl-topbar">
+  <a href="index.html" class="icon-btn" aria-label="ফিরে যান">
+    <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+  <h1>টাইমলাইন</h1>
+  <button class="icon-btn" aria-label="খুঁজুন">
+    <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  </button>
+</header>
+
+<div class="tl-tabs">
+  <button class="tl-tab active" data-view="timeline">সময়রেখা</button>
+  <button class="tl-tab" data-view="map">মানচিত্র</button>
+</div>
+
+<main class="tl-wrap">
+  <div class="tl-line-track" id="tlTrack"></div>
+  <div class="tl-nodes" id="tlNodes"></div>
+</main>
+
+<nav class="bottom-nav">
+  <a href="index.html" class="nav-item">
+    <svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/></svg>
+    <span>হোম</span>
+  </a>
+  <a href="timeline.html" class="nav-item active">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="6" r="2.2" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="18" r="2.2" stroke="currentColor" stroke-width="1.8"/><path d="M12 8.5v7" stroke="currentColor" stroke-width="1.8"/></svg>
+    <span>টাইমলাইন</span>
+  </a>
+  <a href="read.html" class="nav-item">
+    <svg viewBox="0 0 24 24"><path d="M4 5.5C6 4.5 9 4.5 12 6c3-1.5 6-1.5 8-.5v13c-2-1-5-1-8 .5-3-1.5-6-1.5-8-.5z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/></svg>
+    <span>পড়াশোনা</span>
+  </a>
+  <a href="mcq.html" class="nav-item">
+    <svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    <span>প্র্যাকটিস</span>
+  </a>
+  <a href="profile.html" class="nav-item">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.3" stroke="currentColor" stroke-width="1.8"/><path d="M5 20c1.5-4 5-5.5 7-5.5S17.5 16 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    <span>প্রোফাইল</span>
+  </a>
+</nav>
+
+<script src="data.js"></script>
+<script src="timeline.js"></script>
+</body>
+</html>

@@ -4,9 +4,204 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>বাংলা সাহিত্য</title>
-<meta http-equiv="refresh" content="0; url=timeline.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&family=Noto+Serif+Bengali:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<p>লোড হচ্ছে...</p>
+
+<div class="app">
+
+  <!-- Header -->
+  <header class="topbar">
+    <button class="icon-btn" aria-label="মেনু">
+      <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <div class="brand">
+      <h1>বাংলা সাহিত্য</h1>
+      <p>শিখি, বুঝি, মনে রাখি</p>
+    </div>
+    <button class="icon-btn" aria-label="খুঁজুন">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </header>
+
+  <!-- Banner carousel -->
+  <section class="banner-wrap">
+    <div class="banner" id="banner">
+      <div class="banner-slide">
+        <img src="assets/banner-quill.jpg" alt="" class="banner-img">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+          <p class="quote">"সাহিত্য মানুষকে<br>মানুষ হতে শেখায়।"</p>
+          <p class="quote-author">— রবীন্দ্রনাথ ঠাকুর</p>
+          <div class="quote-rule"></div>
+        </div>
+      </div>
+    </div>
+    <div class="dots" id="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <!-- আজকের পড়াশোনা -->
+  <section class="block">
+    <div class="block-head">
+      <div class="block-title">
+        <svg class="head-icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 9h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span>আজকের পড়াশোনা</span>
+      </div>
+      <a href="#" class="link-btn">দেখুন <svg viewBox="0 0 24 24" width="14" height="14"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="stat-grid">
+      <div class="stat-card mint">
+        <div class="stat-icon">📖</div>
+        <div class="stat-num">৮টি</div>
+        <div class="stat-label">নতুন তথ্য</div>
+      </div>
+      <div class="stat-card peach">
+        <div class="stat-icon">🔄</div>
+        <div class="stat-num">১২টি</div>
+        <div class="stat-label">রিভিশন</div>
+      </div>
+      <div class="stat-card lilac">
+        <div class="stat-icon">📝</div>
+        <div class="stat-num">১০টি</div>
+        <div class="stat-label">MCQ প্র্যাকটিস</div>
+      </div>
+      <div class="stat-card sky">
+        <div class="stat-icon">🎯</div>
+        <div class="stat-num">৩টি</div>
+        <div class="stat-label">দুর্বল টপিক</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature grid -->
+  <section class="block">
+    <div class="feature-grid">
+      <a class="feature" href="read.html">
+        <span class="fi bg-green">📗</span>
+        <b>পড়ুন</b><small>সাহিত্য পড়ুন</small>
+      </a>
+      <a class="feature" href="timeline.html">
+        <span class="fi bg-brown">🔗</span>
+        <b>টাইমলাইন</b><small>সাহিত্যের ইতিহাস</small>
+      </a>
+      <a class="feature" href="flashcards.html">
+        <span class="fi bg-blue">🧠</span>
+        <b>মুখস্ত করুন</b><small>সহজে মনে রাখুন</small>
+      </a>
+      <a class="feature" href="mcq.html">
+        <span class="fi bg-purple">📋</span>
+        <b>MCQ প্র্যাকটিস</b><small>প্রশ্নের অনুশীলন</small>
+      </a>
+      <a class="feature" href="exam.html">
+        <span class="fi bg-maroon">📄</span>
+        <b>পরীক্ষা দিন</b><small>নিজেকে যাচাই করুন</small>
+      </a>
+      <a class="feature" href="search.html">
+        <span class="fi bg-teal">🔍</span>
+        <b>দ্রুত খুঁজুন</b><small>যা খুঁজছেন সহজে পান</small>
+      </a>
+      <a class="feature" href="highlights.html">
+        <span class="fi bg-gold">🔖</span>
+        <b>গুরুত্বপূর্ণ তথ্য</b><small>এক নজরে সারাংশ</small>
+      </a>
+      <a class="feature" href="progress.html">
+        <span class="fi bg-navy">📈</span>
+        <b>আমার অগ্রগতি</b><small>আপনার পারফরম্যান্স</small>
+      </a>
+    </div>
+  </section>
+
+  <!-- Streak + revision -->
+  <section class="block two-col">
+    <div class="mini-card streak">
+      <p class="mini-title">ধারাবাহিক অধ্যয়ন 🔥</p>
+      <div class="streak-row">
+        <div>
+          <p class="streak-num">১২ দিন</p>
+          <p class="streak-sub">টানা পড়াশোনা করছেন</p>
+        </div>
+        <div class="ring"><span>🔥</span></div>
+      </div>
+      <button class="cta dark">চমৎকার! চালিয়ে যান <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+    <div class="mini-card revision">
+      <p class="mini-title">🕒 রিভিশন ডিউ</p>
+      <p class="rev-num">৯টি</p>
+      <p class="rev-sub">তথ্য রিভিশন বাকি</p>
+      <button class="cta light">এখনই রিভিশন করুন <svg viewBox="0 0 24 24" width="16" height="16"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+  </section>
+
+  <!-- Timeline highlights -->
+  <section class="block timeline-strip">
+    <div class="block-head">
+      <span class="block-title-plain">টাইমলাইন হাইলাইটস</span>
+      <a href="timeline.html" class="link-btn">সব দেখুন <svg viewBox="0 0 24 24" width="14" height="14"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="hline">
+      <div class="hline-track"></div>
+      <div class="hpoint">
+        <span class="hdot"></span>
+        <b>১৮৬১</b>
+        <small>রবীন্দ্রনাথ ঠাকুর জন্মগ্রহণ</small>
+      </div>
+      <div class="hpoint">
+        <span class="hdot"></span>
+        <b>১৯১৩</b>
+        <small>রবীন্দ্রনাথের নোবেল পুরস্কার</small>
+      </div>
+      <div class="hpoint">
+        <span class="hdot"></span>
+        <b>১৯২২</b>
+        <small>বঙ্গীয় সাহিত্য পরিষদ প্রতিষ্ঠা</small>
+      </div>
+      <div class="hpoint">
+        <span class="hdot"></span>
+        <b>১৯৪৭</b>
+        <small>ভারত ভাগ ও প্রভাব</small>
+      </div>
+      <div class="hpoint">
+        <span class="hdot active"></span>
+        <b>১৯৭১</b>
+        <small>বাংলাদেশ স্বাধীনতা ও সাহিত্য</small>
+      </div>
+    </div>
+  </section>
+
+  <div class="bottom-spacer"></div>
+</div>
+
+<!-- Bottom nav -->
+<nav class="bottom-nav">
+  <a href="#" class="nav-item active">
+    <svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/></svg>
+    <span>হোম</span>
+  </a>
+  <a href="timeline.html" class="nav-item">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="6" r="2.2" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="18" r="2.2" stroke="currentColor" stroke-width="1.8"/><path d="M12 8.5v7" stroke="currentColor" stroke-width="1.8"/></svg>
+    <span>টাইমলাইন</span>
+  </a>
+  <a href="read.html" class="nav-item">
+    <svg viewBox="0 0 24 24"><path d="M4 5.5C6 4.5 9 4.5 12 6c3-1.5 6-1.5 8-.5v13c-2-1-5-1-8 .5-3-1.5-6-1.5-8-.5z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/></svg>
+    <span>পড়াশোনা</span>
+  </a>
+  <a href="mcq.html" class="nav-item">
+    <svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    <span>প্র্যাকটিস</span>
+  </a>
+  <a href="profile.html" class="nav-item">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.3" stroke="currentColor" stroke-width="1.8"/><path d="M5 20c1.5-4 5-5.5 7-5.5S17.5 16 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    <span>প্রোফাইল</span>
+  </a>
+</nav>
+
+<script src="script.js"></script>
 </body>
 </html>
